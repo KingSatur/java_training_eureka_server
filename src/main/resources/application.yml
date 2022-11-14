@@ -1,0 +1,15 @@
+eureka:
+  username: admin
+  password: admin
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:9004
+
+server:
+  port: 10090
